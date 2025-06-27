@@ -1,122 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Excellent Tint Orlando</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #000;
-      color: #fff;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    header img {
-      max-width: 250px;
-      animation: fadeIn 2s ease-in-out;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-top: 20px;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .services, .about, .reviews, .cta {
-      animation: fadeInUp 1.2s ease-in-out;
-    }
-    .services ul {
-      list-style: none;
-      padding: 0;
-    }
-    .services li {
-      margin-bottom: 10px;
-      padding-left: 20px;
-      position: relative;
-    }
-    .services li::before {
-      content: "\2713";
-      position: absolute;
-      left: 0;
-      color: limegreen;
-    }
-    .cta a {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: limegreen;
-      color: #000;
-      padding: 12px 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #888;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="excellent-tint-transparent.png" alt="Excellent Tint Logo" />
-    <h1>Orlando’s No-Nonsense Window Tinting</h1>
-  </header>
-
-  <section class="about">
-    <h2>About</h2>
-    <p>At Excellent Tint Orlando, we keep it simple: If it makes sense, we get it done. 15+ years of experience, no fluff, just quality tinting that lasts. Cars, homes, or businesses — it’s handled.</p>
-  </section>
-
-  <section class="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Car Window Tinting</li>
-      <li>Residential & Commercial Tint</li>
-      <li>Ceramic & UV Protection Film</li>
-      <li>Lifetime Warranty Available</li>
-    </ul>
-  </section>
-
-  <section class="reviews">
-    <h2>What People Are Saying</h2>
-    <p><strong>"Clean, quick, and professional. My car looks amazing!"</strong> – Google Reviewer</p>
-    <p><strong>"No BS. He shows up, gets it done, and does it right."</strong> – Real Customer</p>
-    <p><a href="https://www.google.com/search?q=Excellent+Tint+Orlando+Reviews" style="color: limegreen;">Read more on Google →</a></p>
-  </section>
-
-  <section class="cta">
-    <h2>Get a Quote</h2>
-    <p>Call or text now to book your tint: <strong>(407) XXX-XXXX</strong></p>
-    <a href="tel:407XXXXXXX">📞 Call Now</a>
-  </section>
-
-  <footer>
-    &copy; 2025 Excellent Tint Orlando. All Rights Reserved.
-  </footer>
-</body>
-</html>
+diff --git a/index.html b/index.html
+index 4d9f1ecff693d5a32e736386585579c7a58f3a59..e0c57f3cf52bb3112eeaa5a2dec7583079bfc53f 100644
+--- a/index.html
++++ b/index.html
+@@ -1,122 +1,144 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-  <title>Excellent Tint Orlando</title>
++  <title>Excellent Tint Orlando | Professional Window Tinting</title>
++  <meta name="description" content="Professional car, home and commercial window tinting in Orlando, Florida. High quality films, expert installation and lifetime warranty options." />
++  <meta name="keywords" content="Orlando window tinting, car tint, residential tint, commercial tint, UV protection, ceramic tint" />
++  <meta property="og:title" content="Excellent Tint Orlando" />
++  <meta property="og:description" content="Expert window tinting services for vehicles, homes and businesses in the Orlando area." />
++  <meta property="og:type" content="website" />
++  <link rel="preconnect" href="https://fonts.googleapis.com">
++  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+   <style>
+     body {
+       margin: 0;
+       font-family: 'Orbitron', sans-serif;
+-      background-color: #000;
+-      color: #fff;
++      background: radial-gradient(#0f0f0f, #000000);
++      color: #ffffff;
+       line-height: 1.6;
+       overflow-x: hidden;
+     }
+     header {
+       text-align: center;
+-      padding: 40px 20px;
++      padding: 60px 20px 40px;
+     }
+     header img {
+-      max-width: 250px;
++      width: 220px;
+       animation: fadeIn 2s ease-in-out;
+     }
+     h1 {
+-      font-size: 2rem;
++      font-size: 2.2rem;
+       margin-top: 20px;
+     }
+     section {
+-      padding: 40px 20px;
++      padding: 60px 20px;
+       max-width: 900px;
+       margin: auto;
++      opacity: 0;
++      transform: translateY(40px);
++      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+     }
+-    .services, .about, .reviews, .cta {
+-      animation: fadeInUp 1.2s ease-in-out;
++    section.visible {
++      opacity: 1;
++      transform: translateY(0);
+     }
+     .services ul {
+       list-style: none;
+       padding: 0;
+     }
+     .services li {
+       margin-bottom: 10px;
+-      padding-left: 20px;
++      padding-left: 24px;
+       position: relative;
+     }
+     .services li::before {
+-      content: "\2713";
++      content: '\2713';
+       position: absolute;
+       left: 0;
+       color: limegreen;
+     }
+     .cta a {
+       display: inline-block;
+       margin-top: 20px;
+       background-color: limegreen;
+       color: #000;
+       padding: 12px 24px;
+       border-radius: 4px;
+       text-decoration: none;
+       font-weight: bold;
++      transition: background-color 0.3s ease;
++    }
++    .cta a:hover {
++      background-color: #a2ff4d;
+     }
+     footer {
+       text-align: center;
+       padding: 20px;
+       font-size: 0.9rem;
+       color: #888;
+     }
+     @keyframes fadeIn {
+       from { opacity: 0; }
+       to { opacity: 1; }
+     }
+-    @keyframes fadeInUp {
+-      from {
+-        opacity: 0;
+-        transform: translateY(40px);
+-      }
+-      to {
+-        opacity: 1;
+-        transform: translateY(0);
+-      }
+-    }
+   </style>
+ </head>
+ <body>
+   <header>
+-    <img src="excellent-tint-transparent.png" alt="Excellent Tint Logo" />
+-    <h1>Orlando’s No-Nonsense Window Tinting</h1>
++    <img src="excellent-tint-transparent.png" alt="Excellent Tint Orlando logo" />
++    <h1>Orlando’s No‑Nonsense Window Tinting</h1>
+   </header>
+ 
+-  <section class="about">
+-    <h2>About</h2>
+-    <p>At Excellent Tint Orlando, we keep it simple: If it makes sense, we get it done. 15+ years of experience, no fluff, just quality tinting that lasts. Cars, homes, or businesses — it’s handled.</p>
+-  </section>
++  <main>
++    <section class="about">
++      <h2>About</h2>
++      <p>With over 15 years of experience, Excellent Tint Orlando delivers professional results without the fluff. We service cars, homes and businesses with durable films that look great and last.</p>
++    </section>
+ 
+-  <section class="services">
+-    <h2>Services</h2>
+-    <ul>
+-      <li>Car Window Tinting</li>
+-      <li>Residential & Commercial Tint</li>
+-      <li>Ceramic & UV Protection Film</li>
+-      <li>Lifetime Warranty Available</li>
+-    </ul>
+-  </section>
++    <section class="services">
++      <h2>Services</h2>
++      <ul>
++        <li>Car Window Tinting</li>
++        <li>Residential & Commercial Tint</li>
++        <li>Ceramic & UV Protection Film</li>
++        <li>Lifetime Warranty Available</li>
++      </ul>
++    </section>
+ 
+-  <section class="reviews">
+-    <h2>What People Are Saying</h2>
+-    <p><strong>"Clean, quick, and professional. My car looks amazing!"</strong> – Google Reviewer</p>
+-    <p><strong>"No BS. He shows up, gets it done, and does it right."</strong> – Real Customer</p>
+-    <p><a href="https://www.google.com/search?q=Excellent+Tint+Orlando+Reviews" style="color: limegreen;">Read more on Google →</a></p>
+-  </section>
++    <section class="reviews">
++      <h2>What People Are Saying</h2>
++      <p><strong>"Clean, quick, and professional. My car looks amazing!"</strong> – Google Reviewer</p>
++      <p><strong>"No BS. He shows up, gets it done, and does it right."</strong> – Real Customer</p>
++      <p><a href="https://www.google.com/search?q=Excellent+Tint+Orlando+Reviews" style="color: limegreen;">Read more on Google →</a></p>
++    </section>
+ 
+-  <section class="cta">
+-    <h2>Get a Quote</h2>
+-    <p>Call or text now to book your tint: <strong>(407) XXX-XXXX</strong></p>
+-    <a href="tel:407XXXXXXX">📞 Call Now</a>
+-  </section>
++    <section class="cta">
++      <h2>Get a Quote</h2>
++      <p>Call or text now to book your tint: <strong>(407) XXX-XXXX</strong></p>
++      <a href="tel:407XXXXXXX">📞 Call Now</a>
++    </section>
++  </main>
+ 
+   <footer>
+     &copy; 2025 Excellent Tint Orlando. All Rights Reserved.
+   </footer>
++
++  <script>
++    document.addEventListener('DOMContentLoaded', () => {
++      const observer = new IntersectionObserver(entries => {
++        entries.forEach(entry => {
++          if (entry.isIntersecting) {
++            entry.target.classList.add('visible');
++            observer.unobserve(entry.target);
++          }
++        });
++      }, { threshold: 0.1 });
++
++      document.querySelectorAll('section').forEach(sec => observer.observe(sec));
++    });
++  </script>
+ </body>
+ </html>
